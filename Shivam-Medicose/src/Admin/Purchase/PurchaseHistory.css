@@ -1,0 +1,19 @@
+.icon{
+  cursor: pointer;
+}
+
+.vendor-row {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.col-table{
+  padding: 0;
+}
+.modal-90w {
+  max-width: 95vw !important;/* Adjust the width as needed */
+}

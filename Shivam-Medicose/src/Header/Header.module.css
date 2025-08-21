@@ -1,0 +1,51 @@
+.logo {
+  text-align: center;
+}
+
+.searchbar {
+  padding: 10px;
+  width: 100%;
+  border-color: lightblue;
+  border-style: solid;
+  outline: none;
+}
+
+.button {
+  border-radius: 25px;
+  padding: 10px;
+  width: 150px;
+  border-color: lightblue;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: black;
+  background-color: lightblue;
+  border-color: black;
+}
+
+
+
+.suggestions {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  width: 100%;
+  overflow-y: auto; /* Add this to enable scrolling */
+}
+
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+.suggestion:last-child {
+  border-bottom: none;
+}

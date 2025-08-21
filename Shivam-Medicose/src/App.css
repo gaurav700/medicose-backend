@@ -1,0 +1,287 @@
+.icons-feature{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 25px !important;
+  font-size: 60px !important;
+  background-color: lightblue !important;
+  color: black !important;
+}
+
+.footer-icon{
+  font-size: 30px;
+  color: lightblue;
+}
+.footer-icon:hover{
+  color: black;
+}
+
+
+/* sidebar */
+
+.sidebar1{
+  padding: 10px;
+}
+button,
+a {
+  all: unset;
+  font: inherit;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  width: 7rem;
+  height: calc(100vh - 2.10rem);
+  background-color: #102542;
+  padding: 1rem 0.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: width 500ms ease;
+}
+nav.active {
+  width: 15rem;
+}
+
+.sidebar-header,
+.sidebar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  margin-bottom: 1.5rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+}
+.logo-wrapper > img {
+  width: 13.50rem;
+  height: 5.25rem;
+  background-color: #102542;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+
+.sidebar-links {
+  flex-direction: column;
+  margin-bottom: auto;
+  gap: 0.6rem;
+  padding-top: 1.5rem;
+}
+nav > .sidebar-links {
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+nav.active .sidebar-links,
+nav.active .sidebar-header,
+nav.active .user-profile {
+  justify-content: start;
+  align-items: stretch;
+}
+
+.link {
+  display: flex;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: #cdd7d6;
+}
+.hidden {
+  display: none;
+}
+nav.active .hidden {
+  display: inline;
+}
+
+.link:hover,
+.link.active:hover {
+  background-color: #e4e4e8;
+  color: black;
+  text-decoration: none;
+}
+.link.active {
+  background-color: #f4f4f6;
+  color: black;
+  text-decoration: none;
+}
+
+.link > img {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-bottom .sidebar-links {
+  padding-bottom: 1.5rem;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  padding: 0.5rem;
+  background-color: #102542;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.25s ease;
+  color: #cdd7d6;
+}
+nav.active .toggle-btn {
+  transform: rotate(180deg);
+}
+
+.user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-avatar:hover {
+  scale: 1.1;
+}
+
+.user-details {
+  align-self: center;
+  overflow: hidden;
+  color: #cdd7d6;
+}
+.user-details .username {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.user-details .user-email {
+  font-size: 0.8rem;
+}
+
+
+
+
+/* Dashboard*/
+.dashboard {
+  background-color: #cdd7d6;
+  border-radius: 0.75rem;
+  min-height: calc(100vh - 35px);
+  padding: 17px 60px;
+}
+
+
+/* row1 */
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.row1 input[type="search"] {
+  /* flex: 1; */
+  padding : 10px 30px;
+  width: 49%;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+}
+
+.last p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.last span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* row2 */
+
+.container1 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+}
+
+.start {
+  flex: 1;
+}
+
+.start h4 {
+  padding-top: 13px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 3px;
+}
+
+.start p {
+  font-size: 16px;
+  color: #666;
+}
+
+.end button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.end button:hover {
+  background-color: #0056b3;
+}
+
+.custom-button{
+  background-color: #102542 !important;
+  color: white !important;
+}
+
+.custom-button-delete{
+  background-color: #F87060 !important;
+  color: black !important;
+}
+
+.custom-button-close{
+  background-color: #CDD7D6 !important;
+  color: black !important;
+}
+
+.hover-effect:hover {
+  background-color: white;
+  color: black;
+}
+.showMore{
+  transform: rotate(180deg);
+}
